@@ -1,3 +1,4 @@
+# debian install chrome manualy
 set -e
 
 # Check if OS is Debian-based
