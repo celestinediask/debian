@@ -1,4 +1,5 @@
 #! /bin/bash
+# add chrome repo debian
 
 # tested on debian-12.6-gnome-core
 
