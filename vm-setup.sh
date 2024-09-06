@@ -71,14 +71,14 @@ update_system() {
 
 setup_spice() {
 	# spice agent
-	sudo apt install spice-vdagent
+	sudo apt install spice-vdagent -y
 	systemctl status spice-vdagent
 	sudo systemctl start spice-vdagent
 	sudo systemctl enable spice-vdagent
 }
 
 setup_dash() {
-	sudo apt install gnome-shell-extension-dashtodock
+	sudo apt install gnome-shell-extension-dashtodock -y
 	gnome-extensions enable dash-to-dock@micxgx.gmail.com
 }
 
@@ -88,7 +88,7 @@ main() {
 	comment_out_deb_src
 	disable_grub_timeout
 	update_system
-	enable_autologin
+	#enable_autologin
 	setup_spice
 	setup_dash
 }
