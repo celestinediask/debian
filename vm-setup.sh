@@ -77,11 +77,6 @@ setup_spice() {
 	sudo systemctl enable spice-vdagent
 }
 
-setup_dash() {
-	sudo apt install gnome-shell-extension-dashtodock -y
-	gnome-extensions enable dash-to-dock@micxgx.gmail.com
-}
-
 main() {
 	check_os
 	check_root
@@ -90,7 +85,6 @@ main() {
 	update_system
 	#enable_autologin
 	setup_spice
-	setup_dash
 }
 
 main
